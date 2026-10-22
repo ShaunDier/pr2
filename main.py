@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="To-do API, version 0.1.0")
+app = FastAPI(title="To-do API, version 1.0.0")
 tasks: list[str] = []
 
 @app.get("/health")
