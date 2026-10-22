@@ -9,6 +9,7 @@ def health() -> dict[str, str]:
 
 @app.get("/tasks")
 def list_tasks() -> list[str]:
+    """Return all tasks in the order they were added"""
     return tasks
 
 @app.post("/tasks", status_code=201)
